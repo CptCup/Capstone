@@ -11,19 +11,24 @@ public class BatMob : Entities{
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.I) || Input.GetKey(KeyCode.UpArrow))
+        if (strength <= 0 || speed <= 0 || knowledge <= 0 || sanity <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+
+        if (Input.GetKey(KeyCode.I))
         {
             GetComponent<Rigidbody2D>().transform.position += Vector3.up * Time.deltaTime * speed;
         }
-        if (Input.GetKey(KeyCode.J) || Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.J))
         {
             GetComponent<Rigidbody2D>().transform.position += Vector3.left * Time.deltaTime * speed;
         }
-        if (Input.GetKey(KeyCode.K) || Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.K))
         {
             GetComponent<Rigidbody2D>().transform.position += Vector3.down * Time.deltaTime * speed;
         }
-        if (Input.GetKey(KeyCode.L) || Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.L))
         {
             GetComponent<Rigidbody2D>().transform.position += Vector3.right * Time.deltaTime * speed;
         }

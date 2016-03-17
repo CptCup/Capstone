@@ -45,11 +45,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BoardManager.cs" />
      <Compile Include="Assets\Entities\Camera.cs" />
      <Compile Include="Assets\Entities\Entities.cs" />
+     <Compile Include="Assets\Entities\Mob\BatMob.cs" />
      <Compile Include="Assets\Entities\Mob\FollowMob.cs" />
      <Compile Include="Assets\Entities\Player\Player.cs" />
-     <Compile Include="Assets\Levels\Level.cs" />
+     <Compile Include="Assets\Entities\Player\TriggerEvents.cs" />
+     <Compile Include="Assets\GameManager.cs" />
+     <Compile Include="Assets\Levels\Rooms.cs" />
+     <Compile Include="Assets\Presets\Door.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

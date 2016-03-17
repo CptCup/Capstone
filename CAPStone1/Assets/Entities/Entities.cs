@@ -14,6 +14,6 @@ public abstract class Entities : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+	    
 	}
 }

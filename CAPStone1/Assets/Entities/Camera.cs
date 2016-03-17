@@ -2,18 +2,19 @@
 using System.Collections;
 
 public class Camera : MonoBehaviour {
-    public Transform player;
-
+    public Transform person;
 
 	// Use this for initialization
 	void Start () {
-      
-	}
+        var x = person.position.x;
+        var y = person.position.y;
+        transform.position = new Vector3(x, y, transform.position.z);
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        var x =  player.position.x;
-        var y = player.position.y;
+        float x =  person.position.x;
+        float y = person.position.y;
         transform.position = new Vector3(x, y, transform.position.z);
 	}
 }
